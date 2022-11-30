@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+@import "../reseter";
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.wrapper {
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 75px;
+}
+
+li.pick-one {
+  display: flex;
+  text-align: center;
+}
+
+li.pick-one button {
+  background: none;
+  border: 2px solid black;
+  font-family: "Roboto Mono", monospace;
+  cursor: pointer;
+  height: 355px;
+  width: 325px;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li.pick-one button:hover {
+  border: 10px solid #ffb800;
+}
+
+li.pick-one img {
+  max-height: 250px;
+  max-width: 250px;
+}
+
+/* Winner Page */
+body.winner.you-win .win-wrapper {
+  background: #fff url("./images/you-win.svg") left top no-repeat;
+  background-size: auto 100%;
+}
+
+body.winner.computer-wins .win-wrapper {
+  background: #fff url("./images/computer-wins.svg") right top no-repeat;
+  background-size: auto 100%;
+}
+
+.win-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transform: translateY(-100%);
+
+  .wrapper {
+    display: flex;
+    gap: 200px;
+    position: relative;
+  }
+
+  img {
+    mix-blend-mode: multiply;
+  }
+}
+
+body.computer-wins h1.you-win,
+body.computer-wins h1.tie,
+body.you-win h1.computer-wins,
+body.you-win h1.tie,
+body.tie h1.computer-wins,
+body.tie h1.you-win {
+  visibility: hidden;
+}
+
+h1.tie {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  right: 0;
+  text-align: center;
+}
+
+.computer-pick img {
+  transform: scaleX(-1);
+}
+
+.play-again {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  border: 2px solid black;
+  background: none;
+  padding: 15px 85px;
+  cursor: pointer;
+
+  &:hover {
+    background: black;
+    color: white;
+  }
+}

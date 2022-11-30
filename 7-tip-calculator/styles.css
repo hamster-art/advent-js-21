@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Roboto+Mono:wght@700&display=swap");
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em;
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  border: 1px solid currentcolor;
+  line-height: inherit;
+}
+
+button {
+  overflow: visible;
+  text-transform: none;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  padding: 1px 6px;
+  appearance: button;
+}
+
+input {
+  overflow: visible;
+}
+
+input,
+textarea {
+  padding: 1px;
+}
+
+fieldset {
+  margin: 0 2px;
+  border: 1px solid currentcolor;
+}
+
+legend {
+  display: table;
+  max-width: 100%;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+select {
+  text-transform: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  appearance: textfield;
+}
+
+[type="color"] {
+  background: inherit;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+::input-placeholder {
+  opacity: 0.5;
+  color: inherit;
+}
+
+::-webkit-file-upload-button,
+::-webkit-search-decoration {
+  font: inherit;
+  appearance: button;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  color: inherit;
+}
+
+dl,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+dl dl,
+dl ol,
+dl ul,
+ol dl,
+ol ol,
+ol ul,
+ul dl,
+ul ol,
+ul ul {
+  margin: 0;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+table {
+  border-color: inherit;
+  text-indent: 0;
+}
+
+details {
+  display: block;
+}
+
+dialog {
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 1em;
+  border: solid;
+  background-color: inherit;
+  color: inherit;
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  background: #f6f6f3;
+  padding: 0;
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  color: #333;
+}
+
+.wrapper {
+  background: #ffffff;
+  box-shadow: 0 0 44px rgba(148, 146, 120, 0.23);
+  border-radius: 20px;
+  width: 765px;
+  padding-top: 55px;
+}
+
+.tip-amount {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 35px;
+}
+
+.total-per-person {
+  padding-bottom: 35px;
+}
+
+.tip-amount,
+.total-per-person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 35px;
+}
+.tip-amount label,
+.total-per-person label {
+  font-size: 0.875rem;
+  text-align: right;
+}
+.tip-amount .dollars,
+.total-per-person .dollars {
+  font-size: 5rem;
+}
+.tip-amount sup,
+.total-per-person sup {
+  font-size: 3rem;
+}
+
+.dollars {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.input-fields {
+  background: #f7f7f7;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  padding: 0 35px;
+}
+.input-fields .bill-amount {
+  border-right: 2px solid #dedede;
+  padding: 65px 45px 45px 20px;
+  width: 70%;
+}
+.input-fields .number-of-people {
+  padding: 65px 45px 45px;
+  width: 30%;
+}
+.input-fields .number-of-people .field {
+  display: flex;
+  align-items: flex-end;
+}
+
+.bill-amount .field {
+  display: flex;
+  align-items: flex-end;
+}
+
+input[type="text"] {
+  text-align: center;
+  font-size: 3.875rem;
+  font-family: "Inter", sans-serif;
+  border: none;
+  background: none;
+  outline: none;
+  margin-right: 10px;
+  width: 100%;
+  border-bottom: 3px dotted #b3b3b3;
+}
+.bill-amount input[type="text"] {
+  background: url("./images/dollar.svg") left 15px no-repeat;
+  padding-left: 40px;
+  width: 100%;
+}
+.number-of-people input[type="text"] {
+  background: url("./images/people.svg") left 20px no-repeat;
+  padding-left: 40px;
+  text-align: right;
+}
+
+.input-fields .label {
+  margin-bottom: 45px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.tip-percentages {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 35px;
+  background: #eeeeee;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+label {
+  background: #ffffff;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #60c1b6;
+  font-family: "Roboto Mono", monospace;
+  width: 135px;
+  height: 68px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background: #60c1b6;
+  color: white;
+}
+
+.button-wrapper {
+  box-sizing: border-box;
+  text-align: right;
+  width: 100%;
+  padding: 30px 35px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #f7f7f7;
+}
+
+button {
+  background: #ed7861;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  padding: 20px 100px;
+  margin-left: auto;
+  cursor: pointer;
+}
+button:hover {
+  background: #254441;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCommerce component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <h2 class="card__header">To Go Menu</h2>
+        <div class="card__body menu"></div>
+      </div>
+      <div class="card">
+        <h2 class="card__header">Your Cart</h2>
+        <div class="card__body cart">
+          <p class="cart__empty">Your cart is empty.</p>
+          <div class="cart__body"></div>
+          <div class="price" hidden>
+            <div class="price__row">
+              <div class="price__title">Subtotal:</div>
+              <div class="price__value subtotal"></div>
+            </div>
+            <div class="price__row">
+              <div class="price__title">Tax</div>
+              <div class="price__value tax"></div>
+            </div>
+            <div class="price__row">
+              <div class="price__title">Total:</div>
+              <div class="price__value total price__value--total"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

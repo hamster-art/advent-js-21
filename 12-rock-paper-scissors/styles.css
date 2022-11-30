@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em;
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  border: 1px solid currentcolor;
+  line-height: inherit;
+}
+
+button {
+  overflow: visible;
+  text-transform: none;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  padding: 1px 6px;
+  appearance: button;
+}
+
+input {
+  overflow: visible;
+}
+
+input,
+textarea {
+  padding: 1px;
+}
+
+fieldset {
+  margin: 0 2px;
+  border: 1px solid currentcolor;
+}
+
+legend {
+  display: table;
+  max-width: 100%;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+select {
+  text-transform: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  appearance: textfield;
+}
+
+[type="color"] {
+  background: inherit;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+::input-placeholder {
+  opacity: 0.5;
+  color: inherit;
+}
+
+::-webkit-file-upload-button,
+::-webkit-search-decoration {
+  font: inherit;
+  appearance: button;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  color: inherit;
+}
+
+dl,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+dl dl,
+dl ol,
+dl ul,
+ol dl,
+ol ol,
+ol ul,
+ul dl,
+ul ol,
+ul ul {
+  margin: 0;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+table {
+  border-color: inherit;
+  text-indent: 0;
+}
+
+details {
+  display: block;
+}
+
+dialog {
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 1em;
+  border: solid;
+  background-color: inherit;
+  color: inherit;
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 75px;
+}
+
+li.pick-one {
+  display: flex;
+  text-align: center;
+}
+
+li.pick-one button {
+  background: none;
+  border: 2px solid black;
+  font-family: "Roboto Mono", monospace;
+  cursor: pointer;
+  height: 355px;
+  width: 325px;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li.pick-one button:hover {
+  border: 10px solid #ffb800;
+}
+
+li.pick-one img {
+  max-height: 250px;
+  max-width: 250px;
+}
+
+/* Winner Page */
+body.winner.you-win .win-wrapper {
+  background: #fff url("./images/you-win.svg") left top no-repeat;
+  background-size: auto 100%;
+}
+
+body.winner.computer-wins .win-wrapper {
+  background: #fff url("./images/computer-wins.svg") right top no-repeat;
+  background-size: auto 100%;
+}
+
+.win-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transform: translateY(-100%);
+}
+.win-wrapper .wrapper {
+  display: flex;
+  gap: 200px;
+  position: relative;
+}
+.win-wrapper img {
+  mix-blend-mode: multiply;
+}
+
+body.computer-wins h1.you-win,
+body.computer-wins h1.tie,
+body.you-win h1.computer-wins,
+body.you-win h1.tie,
+body.tie h1.computer-wins,
+body.tie h1.you-win {
+  visibility: hidden;
+}
+
+h1.tie {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  right: 0;
+  text-align: center;
+}
+
+.computer-pick img {
+  transform: scaleX(-1);
+}
+
+.play-again {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  border: 2px solid black;
+  background: none;
+  padding: 15px 85px;
+  cursor: pointer;
+}
+.play-again:hover {
+  background: black;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

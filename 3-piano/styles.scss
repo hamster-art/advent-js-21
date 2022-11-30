@@ -1,0 +1,26 @@
+@import "../reseter";
+
+.box {
+  background-color: #37b2c3;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.white-keys {
+  fill: #fff;
+
+  &:hover {
+    fill: #ffd200;
+  }
+}
+
+.black-keys {
+  fill: #000;
+
+  &:hover {
+    fill: #f40082;
+  }
+}
