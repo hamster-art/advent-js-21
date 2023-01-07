@@ -121,7 +121,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] + label {
-  background: url("checkbox--unchecked.svg") left top no-repeat;
+  background: url("images/checkbox--unchecked.svg") left top no-repeat;
   padding-left: 50px;
   min-height: 35px;
   padding-top: 6px;
@@ -129,5 +129,5 @@ input[type="checkbox"] + label {
 }
 
 input[type="checkbox"]:checked + label {
-  background: url("checkbox--checked.svg") left top no-repeat;
+  background: url("images/checkbox--checked.svg") left top no-repeat;
 }

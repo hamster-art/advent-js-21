@@ -299,7 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function changeInput(e) {
-    const target = e.target;
+    const target = e.currentTarget;
     const val = +target.value;
     currentPage = getCurrentPage();
     setNavBtnDisabled(navBtns[0], val);
@@ -313,7 +313,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function clickOnNavBtn(e) {
-    const target = e.target;
+    const target = e.currentTarget;
     currentPage = getCurrentPage();
 
     if (target.classList.contains("nav-btn")) {
